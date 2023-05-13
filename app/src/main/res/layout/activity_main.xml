@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/home" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Главная"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton"
+                app:layout_constraintStart_toStartOf="@+id/imageButton"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                app:layout_constraintStart_toEndOf="@+id/imageButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/shopping_bag" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Магазин"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton1"
+                app:layout_constraintStart_toStartOf="@+id/imageButton1"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton1"/>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintStart_toEndOf="@+id/imageButton1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/chat" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сообщество"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+                app:layout_constraintStart_toStartOf="@+id/imageButton2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton2"/>
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/textView5"
+                app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поддержка"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+                app:layout_constraintStart_toStartOf="@+id/imageButton3"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton3"/>
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/account" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="профиль"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+                app:layout_constraintStart_toStartOf="@+id/imageButton4"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton4"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Магазин"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="370dp"
+                android:layout_height="230dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/nout"
+                android:scaleType="centerInside"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <ImageView
+                    android:layout_width="369dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nout" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="218dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Умные подарки \nдля мужчин"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="со скидкой до 30%"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:text="с 15 по 24 февраля"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/yznat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/roundstyle"
+                        android:padding="5dp"
+                        android:text="      Узнать больше      "
+                        android:textColor="@color/white"
+                        android:textSize="9sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="175dp"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:scaleType="centerInside"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="218dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Ноутбуки"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/nouts" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="175dp"
+                    android:layout_height="230dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:scaleType="centerInside"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="218dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Планшеты"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/planshet" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="175dp"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:scaleType="centerInside"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="218dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Телефоны"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/phone" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="175dp"
+                    android:layout_height="230dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"
+                    android:scaleType="centerInside"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="218dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Носимые"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/watch" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
